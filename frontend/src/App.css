@@ -1,0 +1,86 @@
+/* Set Lavender Background */
+body {
+  background-color: lavender !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contact Form Container */
+.contact-container {
+  max-width: 600px;
+  margin: 100px auto 20px; /* Push form down below the navbar */
+  padding: 40px;
+  background: #ffffff; /* White background for contrast */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading Styling */
+.contact-heading {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #4B0082;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.contact-input {
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-input:focus {
+  border-color: #4B0082;
+  box-shadow: 0 0 8px rgba(75, 0, 130, 0.3);
+}
+
+/* Textarea */
+.contact-textarea {
+  height: 150px;
+  resize: none;
+}
+
+/* Button */
+.contact-btn {
+  width: 100%;
+  background: #4B0082;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-btn:hover {
+  background: #6A5ACD;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    margin: 80px auto 20px; /* Reduce top margin for smaller screens */
+    padding: 30px;
+  }
+
+  .contact-heading {
+    font-size: 22px;
+  }
+
+  .contact-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+

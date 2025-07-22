@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <br><br>
+    <h1 class="text-center">Login Form</h1>
+    <!-- <button type="button" class="close text-danger" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button> --><br>
+    <div class="container d-flex w-50 align-items-center justify-content-center">
+        <form class="form-group p-3  bg-opacity " action="/api/login" method="post">
+            <input class="form-control text-light bg-transparent mb-2" type="email" placeholder="enter email" name="email" required>
+            <input class="form-control text-light bg-transparent mb-3 " type="password" placeholder="enter password" name="password" required>
+            <div class="d-flex justify-content-end "><button class="btn mr-3 w-30  btn-outline-primary flex-end">Login</button></div>
+        </form>
+    </div>
+    <div class="log d-flex justify-content-center">
+        <p>if does not exists an account <a type="submit" href="/" class="text-danger">Register</a></p>
+    </div>
+</body>
+</html>

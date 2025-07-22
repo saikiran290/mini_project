@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <div class="container-fluid mr-5">
+        <a href="/allMailUploads" class="btn mb-3 mt-3 btn-outline-primary">All Uploaded Mails</a>
+    <form id="emailForm" method="post" class="form-group">
+        <input class='form-control mb-2' type="text" placeholder="enter mail details" name="name">
+        <textarea class='form-control' placeholder="provide mail information to concise" name="emailText" rows="25"></textarea><br>
+        <button class="btn btn-primary mr-3" type="submit" onclick="setAction('/api/summarize')">Concise</button>
+        <button class="btn btn-primary" type="submit" onclick="setAction('/api/classify')">Classify</button>
+    </form>
+    </div>
+    <script>
+        // Function to set the form's action dynamically based on button clicked
+        function setAction(action) {
+            document.getElementById('emailForm').action = action;
+        }
+    </script>
+</body>
+</html>

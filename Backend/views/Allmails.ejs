@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="container-fluid">
+    <center><h1 class="mb-3">All uploaded Mails</h1></center>
+    <div class="row d-flex justify-content-center">
+        <% if(posts && posts.length>0){ %>
+            <% posts.forEach((post)=>{ %>
+                <div class="card h-100 col-md-5 " >
+                        <div class="card-body">
+                            <a href="/mailview/<%= post.name %>"><p class="card-text "><%= post.name %></p></a>
+                        </div>
+                </div>
+        <% }) %>
+    </div>
+    <% }else{ %>
+        <h3> No Mails uploaded yet... </h3>
+    <% } %>
+</body>
+</html>

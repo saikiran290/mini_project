@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <br><br>
+    <h1 class="text-center">Register Form</h1>
+    <!-- <button type="button" class="close text-danger" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button> --><br>
+    <div class="container-fluid d-flex w-50 align-items-center justify-content-center">
+        <form class="form-group p-3  bg-opacity " action="/api/createUser" method="post">
+            <div class="name row">
+                <div class="col-md-6"><input class="form-control text-light bg-transparent mb-2" type="text" placeholder="enter First name" name="firstname" required></div>
+                <div class="col-md-6"><input class="form-control text-light bg-transparent mb-2 " type="text" placeholder="enter Last name" name="lastname" required></div>    
+            </div>
+            <input class="form-control text-light bg-transparent mb-2" type="text" placeholder="enter username" name="username" required>
+            <input class="form-control text-light bg-transparent mb-2" type="email" placeholder="enter email" name="email" required>
+            <input class="form-control text-light bg-transparent mb-3" type="password" placeholder="enter password" name="password" required>
+
+            <div class="d-flex justify-content-end "><button class="btn mr-3 w-25  btn-outline-primary flex-end">Register</button></div>
+        </form>
+    </div>
+    <div class="log d-flex justify-content-center">
+        <p>if already an account exists <a type="submit" href="/login" class="text-danger">login</a></p>
+    </div>
+</body>
+</html>
